@@ -1,0 +1,271 @@
+/* Import the Roboto font */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'); */
+
+/* Global Styles */
+body {
+    font-family: 'Roboto' !important;
+    margin: 0;
+    padding: 0;
+    background-color: #F3F6F8;
+}
+
+/* Container */
+.botshop-container {
+    font-family: 'Roboto' !important;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    /* width: 500px; */
+    margin-left: -380px;
+    margin-right: 250px;
+    margin-top: -20px;
+
+}
+
+
+/* Hover Effect: Change text and icon color to blue */
+.menu-item:hover .menu-icon {
+    filter: brightness(0) saturate(100%) invert(24%) sepia(72%) saturate(4704%) hue-rotate(204deg) brightness(99%) contrast(93%);
+}
+
+.menu-item:hover .menu-text {
+    color: #007bff; /* Change text color to blue */
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    margin-left: 40px; /* To avoid overlap with the sidebar */
+    margin-top: 70px; /* Space for top bar */
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Bot Details Box */
+.bot-shop-box {
+    border-radius: 15px;
+    padding: 24px 16px 24px 16px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  /* Bot Shop Header */
+  .bot-shop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Left Side (Title and Subtitle) */
+  .bot-shop-header-left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bot-title {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .bot-subtitle {
+    font-size: 16px;
+    color: gray;
+  }
+  
+  /* Right Side (Price and Button) */
+  .bot-shop-header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .price-and-button {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between price and button */
+  }
+  
+  .bot-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    margin: 0;
+  }
+  
+  .buy-btn {
+    padding: 7px 22px 7px 22px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .buy-btn:hover {
+    background-color: #0056b3;
+  }
+
+/* Bot Image Container */
+.bot-image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.rounded-image {
+    height: auto;
+    border-radius: 15px; /* Rounded corners for the image */
+    display: block;
+}
+
+/* Play Button */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the button */
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.play-button img {
+    width: 60px; /* Adjust size of the play button */
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease; /* Add a hover effect */
+}
+
+.play-button:hover img {
+    transform: scale(1.1); /* Enlarge the button slightly on hover */
+}
+
+/* Description, Use Cases, and Benefits Boxes */
+.description-box,
+.use-cases-box,
+.benefits-box {
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #595959;
+    margin-top: 10px; /* Space between boxes */
+}
+
+.description-box h2,
+.use-cases-box h2,
+.benefits-box h2 {
+    font-size: 20px;
+    color:#292929;
+    margin-bottom: 1px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 5px 0;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .botshop-container {
+        flex-direction: column; /* Stack sidebar and content vertically */
+    }
+
+    .sidebar {
+        width: 100%; /* Full-width sidebar */
+        height: auto; /* Adjust height */
+        margin-bottom: 20px;
+        border-radius: 0;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .bot-shop-header {
+        flex-direction: column; /* Stack title, subtitle, price, and button */
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .bot-image-container {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .description-box,
+    .use-cases-box,
+    .benefits-box {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+}
+
+/* For mobile devices (780px and smaller) */
+@media (max-width: 780px) {
+    .botshop-container {
+        padding: 0 10px; /* Reduce padding for smaller screens */
+        margin-left: 100px;
+        margin-top: -600px;
+        margin-right: 100px;
+    }
+
+    .sidebar {
+        display: none; /* Hide sidebar to maximize content area */
+    }
+
+    .main-content {
+        padding: 0;
+        margin: 0;
+    }
+
+    .bot-shop-header {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .bot-title {
+        font-size: 1.5rem;
+    }
+
+    .bot-price {
+        font-size: 1rem;
+    }
+
+    .buy-btn {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    .rounded-image {
+        border-radius: 10px;
+    }
+
+    .description-box,
+    .use-cases-box,
+    .benefits-box {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .play-button img {
+        width: 50px;
+        height: 50px;
+    }
+
+    ul {
+        padding-left: 15px; /* Add space for better readability */
+    }
+}

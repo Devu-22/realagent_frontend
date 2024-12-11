@@ -1,0 +1,53 @@
+.container3 {
+    width: 810px;
+    height: 99px;
+    position: absolute;
+    top: 330px;
+    left: 316px;
+    max-width: 810px;
+    border-radius: 15px;
+    background: #ffffff;
+    opacity: 1;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    right: 316px;
+  }
+  
+  .errorText {
+    color: red;
+    font-weight: bold; 
+  }
+  
+  .userCountText {
+    font-size: 24px;
+    font-weight: 700;
+    color: #007bff; 
+    margin: 0;
+  }
+  
+  .userCountNumber {
+    font-weight: 700;
+    color: #007bff;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .container3 {
+      width: 95%; /* Adjust to fit smaller screens */
+      padding: 16px; /* Add padding */
+      margin-top: 20px; /* Add margin */
+    }
+  
+    .userCountText {
+      font-size: 20px; /* Reduce font size for header */
+    }
+  
+    .userCountNumber {
+      font-size: 18px; /* Adjust size for emphasis */
+    }
+  }
+  

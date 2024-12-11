@@ -1,0 +1,120 @@
+/* General Container Responsiveness */
+.waitlist-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* MarketAnalysisBot Styles */
+  /* .market-analysis-bot {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 16px;
+    margin: 0 auto;
+  } */
+  
+  /* .market-analysis-bot .content {
+    padding: 16px;
+  } */
+  
+  /* .market-analysis-bot .title {
+    font-size: 1.8rem;
+    color: #05386b;
+  } */
+  
+  /* .market-analysis-bot .subtitle {
+    font-size: 1rem;
+    color: #5cdb95;
+  } */
+  
+  /* WaitlistConfirmation Styles */
+  .waitlist-confirmation {
+    width: 100%;
+    max-width:810px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    text-align: center;
+    padding: 24px 16px;
+    margin: 16px auto;
+  }
+  
+  .waitlist-confirmation .waitlist-title {
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  .waitlist-confirmation .waitlist-text {
+    font-size: 1rem;
+    color: #333333;
+  }
+  
+  .waitlist-confirmation .waitlist-highlight {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* UserCount Styles */
+  .user-count {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 16px;
+    background-color: #edf5e1;
+    border-radius: 10px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .market-analysis-bot .title {
+      font-size: 1.5rem;
+    }
+  
+    .market-analysis-bot .subtitle {
+      font-size: 0.875rem;
+    }
+  
+    .waitlist-confirmation .waitlist-title {
+      font-size: 1.2rem;
+    }
+  
+    .waitlist-confirmation .waitlist-text {
+      font-size: 0.9rem;
+    }
+  
+    .user-count {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .market-analysis-bot .title {
+      font-size: 1.2rem;
+    }
+  
+    .market-analysis-bot .subtitle {
+      font-size: 0.75rem;
+    }
+  
+    .waitlist-confirmation {
+      padding: 16px;
+    }
+  
+    .waitlist-confirmation .waitlist-title {
+      font-size: 1rem;
+    }
+  
+    .waitlist-confirmation .waitlist-text {
+      font-size: 0.85rem;
+    }
+  
+    .user-count {
+      padding: 12px;
+      font-size: 0.8rem;
+    }
+  }
+  

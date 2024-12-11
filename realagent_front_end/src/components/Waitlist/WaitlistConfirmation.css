@@ -1,0 +1,60 @@
+.waitlist-confirmation {
+    width: 810px;
+    height: 99px;
+    position: absolute;
+    /* top: 290px; Top alignment */
+    top: 210px;
+    left: 316px;
+    right: 316px;
+    max-width: 810px;
+    /* height: auto;
+    margin: 0 auto; 
+    padding: 24px 16px; /* Inner spacing */
+    gap: 16px; 
+    border-radius: 15px;
+    background: #ffffff;
+    opacity: 1;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); 
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .waitlist-title {
+    font-size: 24px;
+    font-weight: 700; 
+    color: #007bff; 
+    margin: 0; 
+  }
+  
+  .waitlist-text {
+    font-size: 16px; 
+    font-weight: 400; 
+    color: #333333;
+    /* margin-top: 12px;  */
+  }
+  
+  .waitlist-highlight {
+    font-weight: 700;
+    color: #007bff; 
+  }
+  
+  /* Make the card responsive */
+  @media (max-width: 768px) {
+    /* .waitlist-confirmation {
+      width: 95%; 
+      padding: 16px; 
+      margin-top: 20px; 
+    } */
+  
+    .header1 {
+      font-size: 20px; /* Reduce font size for the header */
+    }
+  
+    .description {
+      font-size: 14px; /* Reduce font size for the description */
+    }
+  }
+  
